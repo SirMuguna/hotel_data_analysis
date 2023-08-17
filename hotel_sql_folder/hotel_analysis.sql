@@ -17,14 +17,14 @@ CREATE TABLE meal_cost(
     cost double precision,
     meal text
 );
-COPY year_2018 FROM 'C:/Program Files/PostgreSQL/15/data/projects/Hotel_Analysis/meal_cost.csv' WITH (FORMAT csv, HEADER true);
+COPY meal_cost FROM 'C:/Program Files/PostgreSQL/15/data/projects/Hotel_Analysis/meal_cost.csv' WITH (FORMAT csv, HEADER true);
 
 -- Create table market_segment and import the table to postgres data base.
-CREATE TABLE .market_segment(
+CREATE TABLE market_segment(
     discount double precision,
     market_segment text
 );
-COPY year_2018 FROM 'C:/Program Files/PostgreSQL/15/data/projects/Hotel_Analysis/market_segment.csv' WITH (FORMAT csv, HEADER true);
+COPY market_segment FROM 'C:/Program Files/PostgreSQL/15/data/projects/Hotel_Analysis/market_segment.csv' WITH (FORMAT csv, HEADER true);
 
 -- Create table year_2018 and import the table to postgres data base.
 create table year_2018(
